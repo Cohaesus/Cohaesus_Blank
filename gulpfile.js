@@ -14,4 +14,4 @@ gulp.task('start', function() { return startScripts(); });
 
 gulp.task('default', ['start', 'html', 'connect']);
 gulp.task('test', ['html-lint']);
-gulp.task('pre-commit', ['html-lint']);
+gulp.task('pre-commit', ['test']);

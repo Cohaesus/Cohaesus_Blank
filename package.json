@@ -28,6 +28,7 @@
     "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
+    "guppy-pre-commit": "^0.2.1",
     "require-dir": "^0.3.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
