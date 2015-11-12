@@ -10,7 +10,7 @@ Making no assumptions of your current set up. You are going to need Node to
 [Node](https://nodejs.org/en/download/)
 
 ### inuit CSS  
-This project comes packaged with [inuitcss starter kit](https://github.com/inuitcss/getting-started) which can easily be extended by going [here](https://github.com/inuitcss).
+This project comes packaged with really lightweight [inuitcss starter kit](https://github.com/inuitcss/getting-started). Part of the inuitcss framework which can easily be extended by going [here](https://github.com/inuitcss).
 
 ## Usage
 

@@ -3,16 +3,14 @@ var requireDir = require('require-dir');
 var tasks = requireDir('./gulp');
 //var inuit = require('inuit-starter-kit');
 
-function start() {
+function startScripts() {
   tasks.scripts.compile(true);
   tasks.styles.compile(true);
-
-  //tasks.html.lint();
 }
 
 gulp.task('build', function() { return tasks.scripts.compile(); });
 
-gulp.task('start', function() { return start(); });
+gulp.task('start', function() { return startScripts(); });
 
 // Watch files
 gulp.task('watch', function() {

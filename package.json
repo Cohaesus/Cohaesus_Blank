@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repositroy": {
+    "type": "git",
+    "url": "git@github.com:Cohaesus/Cohaesus_Blank.git"
+  },
   "author": "JamesCodes",
   "license": "ISC",
   "devDependencies": {
@@ -16,15 +20,20 @@
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.0",
     "gulp-connect": "^2.2.0",
+    "gulp-copy": "0.0.2",
     "gulp-htmllint": "0.0.6",
+    "gulp-newer": "^1.0.0",
+    "gulp-plumber": "^1.0.1",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
     "require-dir": "^0.3.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.4.0"
   },
   "dependencies": {
+    "del": "^2.0.2",
     "gulp-open": "^1.0.0",
     "inuit-starter-kit": "^0.2.9",
     "react": "^0.13.3"
