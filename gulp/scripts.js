@@ -63,6 +63,5 @@ gulp.task('connect', function() {
 });
 
 module.exports = {
-  compile: compile,
-  connect: connect
+  compile: compile
 }
