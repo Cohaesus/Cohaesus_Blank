@@ -10,17 +10,12 @@ var babel = require('babelify');
 var connect = require('gulp-connect');
 var open = require('gulp-open');
 var gutil = require('gulp-util');
-
-// Paths
-var paths = {
-  src: "./src/js/app.jsx",
-  dest: "./build"
-}
+var config = require('../config.json');
 
 // Compile
 function compile(watch) {
   var browserifyOpts = {
-    entries: [paths.src],
+    entries: [config.paths.js.src],
     debug: true,
     extensions: ['.jsx']
   }
@@ -36,7 +31,7 @@ function compile(watch) {
       .pipe(buffer())
       .pipe(sourcemaps.init({ loadMaps: true }))
       .pipe(sourcemaps.write('./'))
-      .pipe(gulp.dest(paths.dest))
+      .pipe(gulp.dest(config.paths.js.dest))
       .pipe(connect.reload());
   }
 

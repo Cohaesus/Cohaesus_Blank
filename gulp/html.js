@@ -1,34 +1,27 @@
 var gulp = require('gulp');
+var config = require('../config.json');
 var htmllint = require('gulp-htmllint');
 var gutil = require('gulp-util');
 var watch = require('gulp-watch');
-var plumber = require('gulp-plumber');
-var del = require('del');
+var newer = require('gulp-newer');
+var gulpCopy = require('gulp-copy');
 
-// Paths
-var paths = {
-  src: "./src/*.html",
-	dest: "./build"
-}
-
-gulp.task('lint', function() {
-  return gulp.src(paths.src)
-    .pipe(watch(paths.src))
-		.pipe(plumber())
-    .pipe(htmllint({}, htmllintReporter))
+gulp.task('html', function() {
+  gulp.src(config.paths.html.src)
+    .pipe(watch(config.paths.html.src))
+    .pipe(newer(config.paths.html.dest))
+    .pipe(gulp.dest(config.paths.html.dest));
 });
 
-function copy(file){
-  gulp.src(file, {root: '/'})
-  .pipe(gulp.dest(paths.dest));
-}
+gulp.task('html-lint', function() {
+  return gulp.src(config.paths.html.src)
+    .pipe(htmllint({}, htmllintReporter))
+});
 
 function htmllintReporter(filepath, issues) {
 	
   var filepathSplit = filepath.split('/');
   var fileName = filepathSplit[filepathSplit.length - 1];
-
-  del(paths.dest + '/' + fileName);
 
   gutil.log(gutil.colors.yellow("Linting '") + gutil.colors.cyan(fileName) + gutil.colors.yellow("'"));
 
@@ -41,8 +34,6 @@ function htmllintReporter(filepath, issues) {
   }else{
 
     gutil.log(gutil.colors.cyan(fileName) + gutil.colors.yellow(" has passed linting!"));
-    
-    copy(filepath);
     
   }
 }

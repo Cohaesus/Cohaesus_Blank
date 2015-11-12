@@ -4,13 +4,15 @@ This project can be used as a starting point for a new frontend project using th
 
 ## Installation
 
-Making no assumptions of your current set up. You are going to need Node to
+Making no assumptions of your current set up. You are going to need Node which can be found on the link below.
 
 [Node](https://nodejs.org/en/download/)
 
+Once you have Node up and running, you will need to install the dependencies with NPM. Run the following command. `npm install`. This will download all of the required packages.
+
 ## Usage
 
-TODO: Write usage instructions
+To start development, you will need to simply run `gulp`.
 
 ## Contributing
 

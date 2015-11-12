@@ -1,0 +1,13 @@
+{
+  "linting": "change",
+  "paths": {
+    "html": {
+      "src": "./src/*.html",
+      "dest": "./build"
+    },
+    "js": {
+      "src": "./src/js/app.jsx",
+      "dest": "./build"
+    }
+  } 
+}

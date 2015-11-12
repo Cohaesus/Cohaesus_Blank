@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repositroy": {
+  "repository": {
     "type": "git",
     "url": "git@github.com:Cohaesus/Cohaesus_Blank.git"
   },
@@ -17,6 +17,7 @@
     "babel-preset-react": "^6.1.4",
     "babelify": "^7.2.0",
     "browserify": "^11.1.0",
+    "git-guppy": "^1.0.0",
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.0",
     "gulp-connect": "^2.2.0",
