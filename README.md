@@ -6,7 +6,11 @@ This project can be used as a starting point for a new frontend project using th
 
 Making no assumptions of your current set up. You are going to need Node to
 
+### Node
 [Node](https://nodejs.org/en/download/)
+
+### inuit CSS  
+This project comes packaged with [inuitcss starter kit](https://github.com/inuitcss/getting-started) which can easily be extended by going [here](https://github.com/inuitcss).
 
 ## Usage
 

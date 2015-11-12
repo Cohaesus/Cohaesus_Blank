@@ -88,3 +88,6 @@ sftp-config.json
 Session.vim
 .netrwhist
 *~
+
+# Build directory
+build

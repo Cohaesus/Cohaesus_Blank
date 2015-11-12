@@ -1,0 +1,20 @@
+@import "../../node_modules/inuit-starter-kit/node_modules/inuit-defaults/settings.defaults";
+
+@import "../../node_modules/inuit-starter-kit/node_modules/inuit-functions/tools.functions";
+@import "../../node_modules/inuit-starter-kit/node_modules/inuit-mixins/tools.mixins";
+
+@import "../../node_modules/inuit-starter-kit/node_modules/inuit-normalize/generic.normalize";
+@import "../../node_modules/inuit-starter-kit/node_modules/inuit-box-sizing/generic.box-sizing";
+
+@import "../../node_modules/inuit-starter-kit/node_modules/inuit-page/base.page";
+
+$box-model: border-box;
+
+* {
+  box-sizing: $box-model;
+}
+
+body {
+  text-align: center;
+  bakckground: tomato;
+}
