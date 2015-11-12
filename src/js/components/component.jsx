@@ -5,5 +5,5 @@ class Component extends React.Component {
   	return <p>I am a Component!</p>;
   }
 }
- 
+
 export default Component;

@@ -6,9 +6,13 @@ This project can be used as a starting point for a new frontend project using th
 
 Making no assumptions of your current set up. You are going to need Node which can be found on the link below.
 
+Once you have Node up and running, you will need to install the dependencies with NPM. Run the following command. `npm install`. This will download all of the required packages.
+
+### Node
 [Node](https://nodejs.org/en/download/)
 
-Once you have Node up and running, you will need to install the dependencies with NPM. Run the following command. `npm install`. This will download all of the required packages.
+### inuit CSS  
+This project comes packaged with really lightweight [inuitcss starter kit](https://github.com/inuitcss/getting-started). Part of the inuitcss framework which can easily be extended by going [here](https://github.com/inuitcss).
 
 ## Usage
 

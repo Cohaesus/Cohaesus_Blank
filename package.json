@@ -25,6 +25,7 @@
     "gulp-htmllint": "0.0.6",
     "gulp-newer": "^1.0.0",
     "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.0",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
@@ -37,6 +38,7 @@
   "dependencies": {
     "del": "^2.0.2",
     "gulp-open": "^1.0.0",
+    "inuit-starter-kit": "^0.2.9",
     "react": "^0.13.3"
   }
 }
