@@ -11,7 +11,6 @@ var babel = require('babelify');
 var connect = require('gulp-connect');
 var open = require('gulp-open');
 var gutil = require('gulp-util');
-var complexity = require('gulp-complexity');
 var eslint = require('gulp-eslint');
 
 // Compile
@@ -39,7 +38,7 @@ function compile(watch) {
 
   if (watch) {
     bundler.on('update', function() {
-      gutil.log('Bundling', 'Really it did', gutil.colors.magenta('123'));
+      gutil.log(gutil.colors.cyan('Bundling'));
       rebundle();
     });
   }
@@ -61,7 +60,7 @@ gulp.task('connect', function() {
 
 // Linting
 gulp.task('js-lint', function(){
-  gulp.src(config.paths.js.src)
+  gulp.src(config.paths.js.all)
     .pipe(eslint())
     .pipe(eslint.format())
     .on('data', function(file) {
@@ -69,7 +68,6 @@ gulp.task('js-lint', function(){
         gulp.fail = true;
       }
     });
-
 });
 
 process.on('exit', function() {

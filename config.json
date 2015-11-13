@@ -6,8 +6,9 @@
       "dest": "./build"
     },
     "js": {
-      "src": "./src/js/**/*.{js,jsx}",
-      "dest": "./build"
+      "src": "./src/js/app.jsx",
+      "dest": "./build/js",
+      "all": "./src/js/**/*.{js,jsx}"
     },
     "styles": {
       "src": "./src/sass/**/*.scss",

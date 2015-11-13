@@ -17,7 +17,15 @@
             2,
             "never"
         ],
-        "strict": 0
+        "strict": 0,
+        "complexity": [
+            2,
+            2
+        ],
+        "comma-dangle": [
+            2,
+            "never"
+        ]
     },
     "env": {
         "es6": true,
