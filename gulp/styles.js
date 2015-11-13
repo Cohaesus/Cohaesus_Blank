@@ -22,7 +22,10 @@ function compile(watchme) {
     .pipe(gulp.dest(config.paths.styles.dest));
 }
 
+// Linting
 gulp.task('scss-lint', function() {
-  return gulp.src('/scss/*.scss')
-    .pipe(scsslint());
+  return gulp.src(config.paths.styles.src)
+    .pipe(scsslint({
+      'config': 'config/scss-lint.yml',
+    }));
 });
