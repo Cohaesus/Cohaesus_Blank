@@ -15,8 +15,15 @@ The project comes packaged with really lightweight [inuitcss starter kit](https:
 
 ### Ruby Sass
 The project uses Ruby Sass and has a dependency on the Ruby Sass gem.
+[Sass installation instructions](http://sass-lang.com/install)
 
 ## Usage
+
+Install the node modules
+'npm install'
+
+If you haven't got it installed already, install gulp
+znpm install -global gulp`
 
 To start development, you will need to simply run `gulp`.
 
@@ -33,6 +40,8 @@ To start development, you will need to simply run `gulp`.
 TODO: Write credits
 
 ## Licence
+
+MIT License (MIT)
 
 Copyright (c) 2015 Cohaesus Project Ltd
 
