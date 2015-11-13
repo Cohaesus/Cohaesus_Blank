@@ -57,6 +57,4 @@ gulp.task('connect', function() {
   .pipe(open({uri: 'http://localhost:8080'}));
 });
 
-module.exports = {
-  compile: compile
-}
+gulp.task('scripts', function() { return compile(true); });

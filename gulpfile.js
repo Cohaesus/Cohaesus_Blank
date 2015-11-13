@@ -4,16 +4,19 @@ var tasks = requireDir('./gulp');
 var guppy = require('git-guppy')(gulp);
 
 function startScripts() {
-  tasks.scripts.compile(true);
   tasks.styles.compile(true);
 }
 
 gulp.task('build', function() { return tasks.scripts.compile(); });
-
 gulp.task('start', function() { return startScripts(); });
 
-gulp.task('default', ['start', 'html', 'connect']);
+// Default development tasks
+gulp.task('default', ['scripts', 'html', 'connect']);
+
+// Testing task
 gulp.task('test', ['html-lint']);
+
+// Test code on commit
 gulp.task('pre-commit', ['test']);
 
 // Watch files
