@@ -1,7 +1,7 @@
 // Packages
 var os = require('os');
 var gulp = require('gulp');
-var config = require('../config.json');
+var config = require('../config/config.json');
 var sourcemaps = require('gulp-sourcemaps');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
@@ -61,7 +61,9 @@ gulp.task('connect', function() {
 // Linting
 gulp.task('js-lint', function(){
   gulp.src(config.paths.js.all)
-    .pipe(eslint())
+    .pipe(eslint({
+      configFile: './config/.eslintrc'
+    }))
     .pipe(eslint.format())
     .on('data', function(file) {
       if(file.eslint.messages && file.eslint.messages.length){

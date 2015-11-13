@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var config = require('../config.json');
+var config = require('../config/config.json');
 var htmllint = require('gulp-htmllint');
 var gutil = require('gulp-util');
 var watch = require('gulp-watch');
@@ -15,7 +15,9 @@ gulp.task('html', function() {
 
 gulp.task('html-lint', function() {
   return gulp.src(config.paths.html.src)
-    .pipe(htmllint({}, htmllintReporter))
+    .pipe(htmllint({
+      config: './config/.htmllintrc'
+    }, htmllintReporter))
 });
 
 function htmllintReporter(filepath, issues) {

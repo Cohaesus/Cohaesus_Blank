@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var config = require('../config.json');
+var config = require('../config/config.json');
 var sass = require('gulp-ruby-sass');
 var plumber = require('gulp-plumber');
 var watch = require('gulp-watch');
