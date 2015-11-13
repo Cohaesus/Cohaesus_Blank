@@ -12,7 +12,10 @@ Once you have Node up and running, you will need to install the dependencies wit
 [Node](https://nodejs.org/en/download/)
 
 ### inuit CSS  
-This project comes packaged with really lightweight [inuitcss starter kit](https://github.com/inuitcss/getting-started). Part of the inuitcss framework which can easily be extended by going [here](https://github.com/inuitcss).
+The project comes packaged with really lightweight [inuitcss starter kit](https://github.com/inuitcss/getting-started). Part of the inuitcss framework which can easily be extended by going [here](https://github.com/inuitcss).
+
+### Ruby Sass
+The project uses Ruby Sass and has a dependency on the Ruby Sass gem.
 
 ## Usage
 

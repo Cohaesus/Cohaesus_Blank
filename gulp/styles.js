@@ -1,17 +1,22 @@
 var gulp = require('gulp');
 var config = require('../config.json');
-var sass = require('gulp-sass');
+var sass = require('gulp-ruby-sass');
+var plumber = require('gulp-plumber');
+var watch = require('gulp-watch');
 
 gulp.task('sass', function() {
-  compile();
+  compile(true);
 });
 
-function compile(watch) {
-  gulp.src(config.paths.styles.src)
-    .pipe(sass().on('error', sass.logError))
+function compile(watchme) {
+  if (watchme) {
+    watch(config.paths.styles.src, function() {
+      gulp.start('sass');
+    });
+  }
+
+  return sass(config.paths.styles.src)
+    .pipe(plumber())
+    .on('error', sass.logError)
     .pipe(gulp.dest(config.paths.styles.dest));
 }
-
-module.exports = {
-  compile: compile,
-};

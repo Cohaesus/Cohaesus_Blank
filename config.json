@@ -11,8 +11,8 @@
       "all": "./src/js/**/*.{js,jsx}"
     },
     "styles": {
-      "src": "./src/sass/**/*.scss",
+      "src": "./src/sass/*.scss",
       "dest": "./build/css"
     }
-  } 
+  }
 }
