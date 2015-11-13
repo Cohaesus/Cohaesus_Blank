@@ -7,7 +7,7 @@ var guppy = require('git-guppy')(gulp);
 gulp.task('default', ['scripts', 'html', 'sass', 'connect']);
 
 // Testing task
-gulp.task('test', ['html-lint', 'js-lint']);
+gulp.task('test', ['html-lint', 'js-lint', 'scss-lint']);
 
 // Test code on commit
 gulp.task('pre-commit', ['test']);
