@@ -14,7 +14,7 @@ gulp.task('start', function() { return startScripts(); });
 gulp.task('default', ['scripts', 'html', 'connect']);
 
 // Testing task
-gulp.task('test', ['html-lint']);
+gulp.task('test', ['html-lint', 'js-lint']);
 
 // Test code on commit
 gulp.task('pre-commit', ['test']);

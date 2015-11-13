@@ -1,6 +1,7 @@
 // Packages
 var os = require('os');
 var gulp = require('gulp');
+var config = require('../config.json');
 var sourcemaps = require('gulp-sourcemaps');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
@@ -10,7 +11,8 @@ var babel = require('babelify');
 var connect = require('gulp-connect');
 var open = require('gulp-open');
 var gutil = require('gulp-util');
-var config = require('../config.json');
+var complexity = require('gulp-complexity');
+var eslint = require('gulp-eslint');
 
 // Compile
 function compile(watch) {
@@ -55,6 +57,25 @@ gulp.task('connect', function() {
 
   gulp.src(__filename)
   .pipe(open({uri: 'http://localhost:8080'}));
+});
+
+// Linting
+gulp.task('js-lint', function(){
+  gulp.src(config.paths.js.src)
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .on('data', function(file) {
+      if(file.eslint.messages && file.eslint.messages.length){
+        gulp.fail = true;
+      }
+    });
+
+});
+
+process.on('exit', function() {
+  if (gulp.fail) {
+    process.exit(1);
+  }
 });
 
 gulp.task('scripts', function() { return compile(true); });
