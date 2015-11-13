@@ -8,6 +8,10 @@
     "js": {
       "src": "./src/js/app.jsx",
       "dest": "./build"
+    },
+    "styles": {
+      "src": "./src/sass/**/*.scss",
+      "dest": "./build/css",
     }
   } 
 }

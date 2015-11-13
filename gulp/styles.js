@@ -1,20 +1,15 @@
 var gulp = require('gulp');
+var config = require('../config.json');
 var sass = require('gulp-sass');
-
-// Paths
-var paths = {
-  src: './src/sass/**/*.scss',
-  dest: './build/css',
-};
 
 gulp.task('sass', function() {
   compile();
 });
 
 function compile(watch) {
-  gulp.src(paths.src)
+  gulp.src(config.paths.styles.src)
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest(paths.dest));
+    .pipe(gulp.dest(config.paths.styles.dest));
 }
 
 module.exports = {
