@@ -3,6 +3,7 @@ var config = require('../config.json');
 var sass = require('gulp-ruby-sass');
 var plumber = require('gulp-plumber');
 var watch = require('gulp-watch');
+var scsslint = require('gulp-scss-lint');
 
 gulp.task('sass', function() {
   compile(true);
@@ -20,3 +21,8 @@ function compile(watchme) {
     .on('error', sass.logError)
     .pipe(gulp.dest(config.paths.styles.dest));
 }
+
+gulp.task('scss-lint', function() {
+  return gulp.src('/scss/*.scss')
+    .pipe(scsslint());
+});
