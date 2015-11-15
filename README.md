@@ -2,13 +2,13 @@
 
 This project can be used as a starting point for a new frontend project using the latest (10/11/2015) set of tools that we like here at Cohaesus.
 
+Please feel free to pull, use and contribute to the project.
+
 ## Installation
 
 Making no assumptions of your current set up. You are going to need Node which can be found here [here](https://nodejs.org/en/download/)
 
-`gem install scss_lint`
-
-Once you have Node up and running, you will need to install the dependencies with NPM. Run the following command. `npm install`. This will download all of the required packages.
+Install the following gems
 
 ### inuit CSS  
 The project comes packaged with really lightweight [inuitcss starter kit](https://github.com/inuitcss/getting-started). Part of the inuitcss framework which can easily be extended by going [here](https://github.com/inuitcss).
@@ -19,11 +19,15 @@ The project uses Ruby Sass and has a dependency on the Ruby Sass gem.
 
 ## Usage
 
+Install ruby gems
+`gem install sass`
+`gem install scss_lint`
+
 Install the node modules
 'npm install'
 
 If you haven't got it installed already, install gulp
-znpm install -global gulp`
+`npm install -global gulp`
 
 To start development, you will need to simply run `gulp`.
 
