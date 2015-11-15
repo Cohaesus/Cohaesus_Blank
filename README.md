@@ -24,7 +24,7 @@ Install ruby gems
 `gem install scss_lint`
 
 Install the node modules
-'npm install'
+`npm install`
 
 If you haven't got it installed already, install gulp
 `npm install -global gulp`
