@@ -8,15 +8,6 @@ Please feel free to pull, use and contribute to the project.
 
 Making no assumptions of your current set up. You are going to need Node which can be found here [here](https://nodejs.org/en/download/)
 
-Install the following gems
-
-### inuit CSS  
-The project comes packaged with really lightweight [inuitcss starter kit](https://github.com/inuitcss/getting-started). Part of the inuitcss framework which can easily be extended by going [here](https://github.com/inuitcss).
-
-### Ruby Sass
-The project uses Ruby Sass and has a dependency on the Ruby Sass gem.
-[Sass installation instructions](http://sass-lang.com/install)
-
 ## Usage
 
 Install ruby gems
@@ -42,6 +33,13 @@ To start development, you will need to simply run `gulp`.
 ## Credits
 
 TODO: Write credits
+
+### inuit CSS  
+The project comes packaged with really lightweight [inuitcss starter kit](https://github.com/inuitcss/getting-started). Part of the inuitcss framework which can easily be extended by going [here](https://github.com/inuitcss).
+
+### Ruby Sass
+The project uses Ruby Sass and has a dependency on the Ruby Sass gem.
+[Sass installation instructions](http://sass-lang.com/install)
 
 ## Licence
 
