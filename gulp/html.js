@@ -16,7 +16,7 @@ gulp.task('html', function() {
 gulp.task('html-lint', function() {
   return gulp.src(config.paths.html.src)
     .pipe(htmllint({
-      config: './config/.htmllintrc'
+      config: '../config/.htmllintrc'
     }, htmllintReporter))
 });
 

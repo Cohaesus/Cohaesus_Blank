@@ -62,7 +62,7 @@ gulp.task('connect', function() {
 gulp.task('js-lint', function(){
   gulp.src(config.paths.js.all)
     .pipe(eslint({
-      configFile: './config/.eslintrc'
+      configFile: 'config/.eslintrc'
     }))
     .pipe(eslint.format())
     .on('data', function(file) {
